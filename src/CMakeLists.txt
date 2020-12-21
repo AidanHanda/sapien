@@ -9,7 +9,7 @@ add_library(sapien_library lib.cpp ${HEADER_LIST})
 target_include_directories(sapien_library PUBLIC ../include)
 
 # All users of this library will need at least C++11
-target_compile_features(sapien_library PUBLIC cxx_std_17)
+target_compile_features(sapien_library PUBLIC cxx_std_20)
 
 # IDEs should put the headers in a nice place
 source_group(

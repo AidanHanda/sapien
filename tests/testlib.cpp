@@ -8,7 +8,8 @@ TEST_CASE("Quick check", "[main]") {
   REQUIRE(val == 42);
 }
 
-TEST_CASE("Fail", "[main]") {
-  auto val = sapien::greeting();
-  REQUIRE(val == 0);
+TEST_CASE("Hello check", "[main]") {
+  auto val = sapien::say_hello();
+
+  REQUIRE(val == "Hello");
 }

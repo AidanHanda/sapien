@@ -9,7 +9,7 @@ FetchContent_MakeAvailable(catch)
 # Tests need to be added as executables first
 add_executable(testlib testlib.cpp)
 
-target_compile_features(testlib PRIVATE cxx_std_17)
+target_compile_features(testlib PRIVATE cxx_std_20)
 
 # Should be linked to the main library, as well as the Catch2 testing library
 target_link_libraries(testlib PRIVATE sapien_library Catch2::Catch2)
