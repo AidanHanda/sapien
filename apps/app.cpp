@@ -1,7 +1,9 @@
 #include <string>
 #include <iostream>
 
+#include "sapien/lib.hpp"
+
 int main() {
-  std::cout << "Hello World!" << std::endl;
+  std::cout << sapien::say_hello() << std::endl;
   return 0;
 }
